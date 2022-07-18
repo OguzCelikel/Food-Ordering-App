@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		F635BC0E2885AA7D0017148D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F635BC0D2885AA7D0017148D /* AppDelegate.swift */; };
 		F635BC102885AA7D0017148D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F635BC0F2885AA7D0017148D /* SceneDelegate.swift */; };
-		F635BC122885AA7D0017148D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F635BC112885AA7D0017148D /* ViewController.swift */; };
 		F635BC152885AA7D0017148D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F635BC132885AA7D0017148D /* Main.storyboard */; };
 		F635BC172885AA7E0017148D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F635BC162885AA7E0017148D /* Assets.xcassets */; };
 		F635BC1A2885AA7E0017148D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F635BC182885AA7E0017148D /* LaunchScreen.storyboard */; };
+		F635BC262885B4EA0017148D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F635BC252885B4EA0017148D /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F635BC0A2885AA7D0017148D /* FoodOrderingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodOrderingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F635BC0D2885AA7D0017148D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F635BC0F2885AA7D0017148D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F635BC112885AA7D0017148D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F635BC142885AA7D0017148D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F635BC162885AA7E0017148D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F635BC192885AA7E0017148D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F635BC1B2885AA7E0017148D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F635BC252885B4EA0017148D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		F635BC0C2885AA7D0017148D /* FoodOrderingApp */ = {
 			isa = PBXGroup;
 			children = (
+				F635BC232885B4840017148D /* CustomViews */,
+				F635BC222885B4750017148D /* Views */,
+				F635BC212885B46B0017148D /* Models */,
 				F635BC0D2885AA7D0017148D /* AppDelegate.swift */,
 				F635BC0F2885AA7D0017148D /* SceneDelegate.swift */,
-				F635BC112885AA7D0017148D /* ViewController.swift */,
 				F635BC132885AA7D0017148D /* Main.storyboard */,
 				F635BC162885AA7E0017148D /* Assets.xcassets */,
 				F635BC182885AA7E0017148D /* LaunchScreen.storyboard */,
 				F635BC1B2885AA7E0017148D /* Info.plist */,
 			);
 			path = FoodOrderingApp;
+			sourceTree = "<group>";
+		};
+		F635BC212885B46B0017148D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F635BC222885B4750017148D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F635BC242885B4A10017148D /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F635BC232885B4840017148D /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F635BC242885B4A10017148D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F635BC252885B4EA0017148D /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F635BC122885AA7D0017148D /* ViewController.swift in Sources */,
 				F635BC0E2885AA7D0017148D /* AppDelegate.swift in Sources */,
 				F635BC102885AA7D0017148D /* SceneDelegate.swift in Sources */,
+				F635BC262885B4EA0017148D /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
